@@ -1,0 +1,205 @@
+@font-face {
+    font-family: poppinsRegular;
+    src: url('../assets/font/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppinsBold;
+    src: url('../assets/font/Poppins-Bold.ttf');
+}
+
+footer{
+    display: none;
+}
+
+#footer-responsive{
+    display: none;
+}
+
+h1{
+    font-family: poppinsBold;
+}
+
+h5{
+    font-family: poppinsBold;
+}
+
+p{
+    font-family: poppinsRegular;
+}
+
+#mynavbar{
+    display: none;
+}
+
+body{
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-repeat: no-repeat;
+font-family: 'Jost', sans-serif;
+background:  linear-gradient(rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 1) 100%), url("../assets/x2/juliana-castro-LdEZjO3wjqQ-unsplash@2x.png");
+}
+
+.main{
+width: 350px;
+height: 600px;
+background: #fff;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 5px 20px 50px #000;
+}
+
+#chk{
+display: none;
+}
+
+.signup{
+position: relative;
+width:100%;
+height: 100%;
+}
+label{
+color: #00811E;
+font-size: 2.3em;
+justify-content: center;
+display: flex;
+margin: 60px;
+font-weight: bold;
+cursor: pointer;
+transition: .5s ease-in-out;
+}
+input{
+width: 80%;
+height: 50px;
+background: whitesmoke;
+justify-content: center;
+display: flex;
+margin: 10px auto;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 5px;
+}
+button{
+width: 80%;
+height: 40px;
+margin: 10px auto;
+justify-content: center;
+display: block;
+color: #fff;
+background: #00811E;
+font-size: 1em;
+font-weight: bold;
+margin-top: 20px;
+outline: none;
+border: none;
+border-radius: 5px;
+transition: .2s ease-in;
+cursor: pointer;
+}
+button:hover{
+background: transparent;
+color: #00811E;
+}
+.login{
+height: 460px;
+background: #eee;
+border-radius: 60% / 10%;
+transform: translateY(-180px);
+transition: .8s ease-in-out;
+}
+.login label{
+color: #00811E;
+margin: 0;
+transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+transform: scale(1);
+}
+#chk:checked ~ .signup label{
+transform: scale(.6);
+}
+
+.home-icon{
+    margin: 1rem;
+}
+
+.home-icon h2{
+    font-weight: bold;
+}
+
+.home-icon i{
+    color: #00811E;
+    opacity: 60%;
+    margin-right: 3rem;
+}
+
+.home-icon i:hover{
+    color: #00811E;
+    opacity: 100%;
+    transition: all ease 0.2s;
+}
+
+.home-icon a{
+    text-decoration: none;
+    color: #121212;
+}
+
+.show_hide_password{
+    display: flex;
+}
+
+.eye-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.eye-icon i{
+    color:#00811E;
+}
+
+.eye-icon a{
+    color: black;
+    opacity: 60%;
+}
+
+.eye-icon h5{
+    font-size: 15px;
+}
+
+#vanta-wave{
+    padding-left: 32rem;
+    padding-right: 31.5rem;
+    padding-bottom: 2.55rem;
+}
+
+@media screen and (max-width: 560px) {
+    h2{
+        font-size: 32px;
+    }
+
+    .login label{
+        margin: -1rem;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .brand{
+        display: none;
+    }
+
+    #vanta-wave{
+        display: none;
+    }
+
+}
